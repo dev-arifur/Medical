@@ -1,0 +1,204 @@
+/*****************************
+  Banner
+*****************************/
+.banner{
+  overflow: hidden;
+}
+
+.banner-img1{
+  left: 15px;
+}
+
+.banner-img2{
+  right: 70px;
+}
+
+.banner-img3{
+  left: 15px;
+}
+
+.banner-img4{
+  right: 0px;
+}
+
+.banner-img5{
+  right: -67px;
+  bottom: -70px;
+}
+
+.banner-02{
+	padding-top: 170px;
+	&:before{
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 50%;
+    background: rgba($secondary, 0.5);
+    height: 100%;
+    top: 0;
+	}
+
+	.banner-img1{
+		position:absolute;
+		top: 20px;
+		left: auto;
+		right: 10.5%;;
+	}
+
+	.banner-img2{
+		position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left:15px;
+    right: auto;
+	}
+
+	.banner-img3 {
+    right: 15px;
+    position: absolute;
+    top: 10px;
+    left: auto;
+	}
+
+	.banner-img4 {
+    right: 13%;
+    position: absolute;
+    bottom: 10%;
+  }
+}
+
+.banner-03{
+  .banner-content{
+    padding-top:110px;
+    padding-bottom: 140px;
+    margin: 190px 0px;
+    .banner-img1{
+      top: 0;
+      left: 0;
+    }
+    .banner-img2{
+      top: 0;
+      right: 30%;
+    }
+    .banner-img3{
+      bottom:0;
+      left: 0;
+    }
+    .banner-img4{
+      bottom:0;
+      right:30%;
+    }
+    h1{
+      font-size: 60px;
+    }
+  }
+  .banner-round-bg{
+    top: -50px;
+    right: 3%;
+  }
+  .banner-bg2{
+    bottom:0;
+    right: -280px;
+  }
+}
+
+/*swiper-slide*/
+.swiper-button-next,
+.swiper-button-prev {
+  background-image: inherit !important;
+  z-index: 1;
+  background:rgba($primary,0.5);
+  line-height: 50px;
+  height: 50px;
+  width: 30px;
+  text-align: center;
+  color: $white;
+  transition: all 0.5s ease;
+  &:hover{
+    background:rgba($primary,1);
+  }
+  &:focus{
+    border: none;
+    border-radius: 0;
+    outline: none;
+  }
+}
+
+.banner-03 .slide-02 .banner-bg2 {
+    right: auto;
+    left: -300px;
+}
+.banner-03 .slide-02 .banner-round-bg{
+    left: 3%;
+    right: auto;
+}
+
+
+
+
+@media (max-width:1199px) {
+  .banner-03 .banner-bg2{
+    right: -370px;
+  }
+  .banner-03 .banner-round-bg {
+    top: -100px;
+    right: 0;
+  }
+}
+@media (max-width:991px) {
+
+  .banner-02{
+    padding-top: 60px;
+  }
+
+  .banner-03 .banner-content {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    margin: 50px 0px;
+  }
+  .banner-03 .banner-content .banner-img2,
+  .banner-03 .banner-content .banner-img4{
+    right: 0;
+  }
+
+  .swiper-slide .slider-1 h1{
+    font-size: 36px;
+  }
+
+}
+
+@media (max-width:767px) {
+  .banner-03 .banner-round-bg {
+    top: -65px;
+  }
+  .banner-03 .banner-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 50px 0px;
+  }
+  .banner-03 .banner-content h1 {
+    font-size: 40px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+
+}
+
+@media (max-width:479px) {
+
+  .banner-03 .banner-content h1 {
+    font-size: 30px;
+  }
+
+  .banner-03 .banner-round-bg {
+    top: 0;
+  }
+
+  .swiper-slide .slider-1 h1 {
+    font-size: 30px;
+  }
+}

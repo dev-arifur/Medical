@@ -1,0 +1,246 @@
+/*****************************
+  Feature Info
+*****************************/
+.feature-items {
+  .feature-icon{
+    margin-bottom: 20px;
+    font-size: 60px;
+    line-height: 60px;
+    i{
+      font-size: 60px;
+      color: $primary;
+    }
+  }
+
+  .feature-content{
+    h6{
+      margin-bottom: 20px;
+      color: $primary;
+      font-weight: 500;
+    }
+  }
+}
+
+// section {
+//   [class^="col-"]:nth-child(n {
+//     & + 4) {
+//       .feature-items-style-02 {
+//         border-bottom: 1px solid $gray-2;
+//       }
+//     }
+//   }
+// }
+
+.feature-items-style-02 {
+  border-top: 1px solid $gray-2;
+  border-left: 1px solid $gray-2;
+  border-right: 1px solid $gray-2;
+  background:$white;
+  padding: 40px;
+  height: 100%;
+  margin-right: -1px;
+  margin-top: -1px;
+  position: relative;
+  transition: all 0.5s ease;
+
+  .feature-number {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 16px;
+    color: rgba($primary, 0.5);
+  }
+
+  &:hover{
+    background:url(../images/pattern.png);
+    background-color: $primary;
+    color: $white;
+    border: 1px solid $primary;
+    .feature-icon{
+      i{
+        color: $white;
+      }
+    }
+
+    h6{
+      color: $white;
+    }
+
+    .feature-number {
+      color: rgba($secondary, 0.5);
+    }
+  }
+}
+
+.service-items{
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-bottom: 30px;
+  &:hover{
+    box-shadow: 0 0.1rem 1rem rgba($black, 0.1);
+    .service-content{
+      .icon-btn{
+        opacity: 1;
+      }
+    }
+  }
+
+  .service-content{
+    padding: 30px;
+    span{
+      color: $secondary;
+      margin-bottom: 5px;
+      display: block;
+      font-size: 12px;
+    }
+    h5{
+      color: $primary;
+      margin-bottom: 20px;
+    }
+    .icon-btn {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      background: $primary;
+      color: $white;
+      border-radius: 50px;
+      opacity: 0;
+    }
+  }
+}
+
+.service-items-style-02 {
+  .service-content {
+    position: absolute;
+    top: 50%;
+    background: rgba($white, 0.9);
+    width: 90%;
+    height: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+  }
+  &:hover{
+    .service-content {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .icon-btn{
+      bottom:15px;
+    }
+  }
+}
+
+.feature-step{
+  .feature-step-icon{
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    border-radius: 100%;
+    background-color: $secondary;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    color: $white;
+    margin-bottom: 40px;
+    i{
+      font-size: 48px;
+    }
+
+    .feature-step-number{
+      position: absolute;
+      font-size: 48px;
+      color: rgba($white, 0.15);
+      right: -20px;
+      bottom: -30px;
+      font-weight: 700;
+    }
+  }
+
+  .feature-info-content{
+    .feature-info-title{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+/* service-detail */
+.service-detail{
+  .service-items{
+    margin-bottom: 30px;
+  }
+}
+
+.sidebar{
+  .widget{
+    .widget-services{
+      ul.list-style-underline{
+        li{
+          padding-bottom: 0;
+          margin-bottom: 0;
+          a{
+            padding:15px;
+            transition: all 0.5s ease;
+            &:hover{
+              background-color:$primary;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    .widget-worktime{
+      ul{
+        li{
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    .widget-services-care{
+      .services-care-icon{
+        i{
+          font-size: 80px;
+          color: $white;
+          line-height: 80px;
+        }
+      }
+
+      .services-care-title{
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.departments-items{
+  background-color: $white;
+  box-shadow: $box-shadow;
+  .departments-content{
+    padding: 40px 30px;
+    .departments-icon{
+      height: 70px;
+      width: 70px;
+      line-height: 70px;
+      display: inline-block;
+      text-align: center;
+      border:1px solid $primary;
+      margin-bottom: 25px;
+      i{
+        font-size:40px;
+        color: $primary;
+      }
+    }
+  }
+}
